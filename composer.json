@@ -1,0 +1,29 @@
+{
+    "name": "pfefferle/webfinger-cli",
+    "description": "Web version of the finger protocol",
+    "keywords": ["finger", "webfinger"],
+    "homepage": "http://webfinger.net/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthias Pfefferle",
+            "email": "pfefferle@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "2.5.*",
+        "mf2/mf2": "0.*",
+        "barnabywalters/mf-cleaner": "0.*",
+        "pear/net_webfinger": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Command\\": "commands/",
+            "Application\\": "libs/",
+            "Lib\\": "libs/"
+        }
+    },
+    "bin": [
+        "webfinger"
+    ]
+}

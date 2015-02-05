@@ -1,0 +1,15 @@
+{
+    "chmod": "0755",
+    "directories": [
+        "libs",
+        "commands"
+    ],
+    "finder": [{
+        "name": "*.php",
+        "exclude": ["test", "tests"],
+        "in": "vendor"
+    }],
+    "main": "webfinger.php",
+    "output": "bin/webfinger.phar",
+    "stub": true
+}
