@@ -11,10 +11,10 @@
         }
     ],
     "require": {
-        "symfony/console": "2.5.*",
+        "symfony/console": "2.6.*",
         "mf2/mf2": "0.*",
         "barnabywalters/mf-cleaner": "0.*",
-        "pear/net_webfinger": "*"
+        "pear/net_webfinger": "0.4.*"
     },
     "autoload": {
         "psr-4": {

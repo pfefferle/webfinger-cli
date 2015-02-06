@@ -11,10 +11,7 @@ use Symfony\Component\Console\Helper\Table;
 use Net_WebFinger;
 
 /**
- *
- *
- *
- *
+ * A WebFinger CLI class
  *
  * @author Matthias Pfefferle <matthias@pfefferle.org>
  */
@@ -29,7 +26,7 @@ class WebFingerCommand extends Command
             ->setName('webfinger')
             ->setDescription('Get someones infos')
             ->setDefinition(array())
-            ->addArgument('acct', InputArgument::REQUIRED, 'Who do you want to greet?')
+            ->addArgument('resource', InputArgument::REQUIRED, 'Who do you want to lookup?')
             ->addOption('insecure', 'i', InputOption::VALUE_NONE, 'Fallback to http.');
     }
 
@@ -48,7 +45,7 @@ class WebFingerCommand extends Command
             $webfinger->fallbackToHttp = true;
         }
 
-        $react = $webfinger->finger($input->getArgument("acct"));
+        $react = $webfinger->finger($input->getArgument("resource"));
 
         $output->writeln("<info>Data source URL: {$react->url}</info>");
 
