@@ -7,7 +7,7 @@
     "authors": [
         {
             "name": "Matthias Pfefferle",
-            "email": "pfefferle@gmail.com"
+            "email": "matthias@pfefferle.org"
         }
     ],
     "require": {
@@ -24,6 +24,6 @@
         }
     },
     "bin": [
-        "webfinger"
+        "bin/webfinger"
     ]
 }
