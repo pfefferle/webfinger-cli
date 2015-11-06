@@ -104,7 +104,18 @@ class WebFingerHelper
             }
 
             if (is_array($value)) {
-                $value = implode("\n", $value);
+                $first = current($value);
+                if (is_array($first)) {
+                    if (array_key_exists('value', $first)) {
+                        $value = $first['value'];
+                    } else {
+                        $value = $value[0];
+                    }
+
+                    continue;
+                }
+
+                $value = implode(PHP_EOL, $value);
             }
 
             $profile[] = array($this->beautifyHCardKey($key), $value);
