@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "symfony/console": "2.6.*",
+        "symfony/console": "2.*",
         "mf2/mf2": "0.*",
         "barnabywalters/mf-cleaner": "0.*",
         "pear/net_webfinger": "0.4.*"
