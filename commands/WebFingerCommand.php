@@ -54,7 +54,7 @@ class WebFingerCommand extends Command
         // check for errors
         if ($react->error !== null) {
             $this->displayError($react->error, $output);
-            //return;
+            return Command::FAILURE;
         }
 
         $helper = new \Lib\WebFingerHelper($react);
@@ -86,6 +86,8 @@ class WebFingerCommand extends Command
             ->setHeaders(array('Type', 'Link'))
             ->setRows($links);
         $table->render();
+
+        return Command::SUCCESS;
     }
 
     /**

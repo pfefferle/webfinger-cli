@@ -16,7 +16,10 @@ Install using Composer
 
 To build the phar file, install [Box](http://box-project.org)
 
-`$ composer global require 'kherge/box=~2.4' --prefer-source`
+```terminal
+$ brew tap humbug/box
+$ brew install box
+```
 
 and run
 

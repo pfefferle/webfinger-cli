@@ -75,6 +75,7 @@ class WebFingerHelper
         foreach ($this->react as $link) {
             $type = $this->getNicenameByRel($link->rel);
             $link = ($link->href ? $link->href : $link->template);
+            $link = mb_strimwidth($link, 0, 100, "...");
 
             $links[] = array($type, $link);
         }

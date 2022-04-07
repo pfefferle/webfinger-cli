@@ -1,15 +1,19 @@
 {
-    "chmod": "0755",
     "directories": [
         "libs",
         "commands"
     ],
-    "finder": [{
-        "name": "*.php",
-        "exclude": ["test", "tests"],
-        "in": "vendor"
-    }],
+    "finder": [
+        {
+            "name": "*.php",
+            "exclude": ["test", "tests"],
+            "in": "vendor"
+        },
+        {
+            "name": "webfinger.php",
+            "in": "."
+        }
+    ],
     "main": "webfinger.php",
-    "output": "bin/webfinger.phar",
-    "stub": true
+    "output": "bin/webfinger.phar"
 }
