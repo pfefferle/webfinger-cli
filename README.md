@@ -14,7 +14,7 @@ Install using Composer
 
 ## Build phar file
 
-To build the phar file, install [Box](http://box-project.org)
+To build the phar file, install [Box](https://github.com/box-project/box)
 
 ```terminal
 $ brew tap humbug/box
