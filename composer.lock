@@ -117,16 +117,16 @@
         },
         {
             "name": "pear/net_webfinger",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Net_WebFinger.git",
-                "reference": "70b98466af24490e66c3d8b83623ad982ec351dd"
+                "reference": "7bc13b6e3185c7f407b34e62214b5efe0f21a2ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Net_WebFinger/zipball/70b98466af24490e66c3d8b83623ad982ec351dd",
-                "reference": "70b98466af24490e66c3d8b83623ad982ec351dd",
+                "url": "https://api.github.com/repos/pear/Net_WebFinger/zipball/7bc13b6e3185c7f407b34e62214b5efe0f21a2ed",
+                "reference": "7bc13b6e3185c7f407b34e62214b5efe0f21a2ed",
                 "shasum": ""
             },
             "require": {
@@ -151,7 +151,7 @@
                 "src/"
             ],
             "license": [
-                "LGPL"
+                "LGPL-3.0-or-later"
             ],
             "authors": [
                 {
@@ -161,11 +161,12 @@
                 }
             ],
             "description": "WebFinger implementation for PHP",
+            "homepage": "http://pear.php.net/package/Net_Webfinger",
             "support": {
                 "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Net_WebFinger",
                 "source": "https://github.com/pear/Net_WebFinger"
             },
-            "time": "2014-07-17T21:02:18+00:00"
+            "time": "2023-05-22T18:21:16+00:00"
         },
         {
             "name": "pear/xml_xrd",
