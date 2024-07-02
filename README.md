@@ -23,4 +23,4 @@ $ brew install box
 
 and run
 
-`$ box build -v`
+`$ box compile -v`

@@ -5,15 +5,23 @@
     ],
     "finder": [
         {
-            "name": "*.php",
-            "exclude": ["test", "tests"],
+            "notName": "/LICENSE|.*\\.md|.*\\.dist|Makefile|composer\\.json|composer\\.lock/",
+            "exclude": [
+                "doc",
+                "test",
+                "test_old",
+                "tests",
+                "Tests",
+                "vendor-bin"
+            ],
             "in": "vendor"
         },
         {
-            "name": "webfinger.php",
+            "name": "composer.json",
             "in": "."
         }
     ],
+    "force-autodiscovery": true,
     "main": "webfinger.php",
     "output": "bin/webfinger.phar"
 }
