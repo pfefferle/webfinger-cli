@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    tags: ["*"]
+
+permissions:
+  contents: write
+
+jobs:
+  phar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.4"
+          extensions: curl, json, mbstring
+          tools: box
+          coverage: none
+          ini-values: phar.readonly=0
+      - run: composer install --no-interaction --no-progress --prefer-dist --no-dev --optimize-autoloader
+      - run: box compile
+      - run: build/webfinger.phar --version
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: build/webfinger.phar
+          generate_release_notes: true

@@ -1,19 +1,16 @@
 #!/usr/bin/env php
 <?php
-// Do not show any errors
-ini_set('display_errors', 'Off');
-ini_set('display_startup_errors', 'Off');
-error_reporting(0);
 
-// installed via composer?
-if (file_exists($a = __DIR__.'/../../../autoload.php')) {
-    require_once $a;
-} else {
-    require_once __DIR__.'/../vendor/autoload.php';
+declare(strict_types=1);
+
+// Hide deprecation notices from third-party libraries; everything else surfaces as a real error.
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
+
+foreach ([__DIR__ . '/../../../autoload.php', __DIR__ . '/../vendor/autoload.php'] as $autoload) {
+    if (file_exists($autoload)) {
+        require $autoload;
+        break;
+    }
 }
 
-$app = new \Application\WebFingerApplication("WebFinger");
-
-$app->add(new \Command\WebfingerCommand);
-
-$app->run();
+(new Pfefferle\WebFinger\Application())->run();
