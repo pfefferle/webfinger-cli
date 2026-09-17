@@ -1,27 +1,13 @@
 {
-    "directories": [
-        "libs",
-        "commands"
-    ],
+    "output": "build/webfinger.phar",
+    "directories": ["src"],
     "finder": [
         {
-            "notName": "/LICENSE|.*\\.md|.*\\.dist|Makefile|composer\\.json|composer\\.lock/",
-            "exclude": [
-                "doc",
-                "test",
-                "test_old",
-                "tests",
-                "Tests",
-                "vendor-bin"
-            ],
-            "in": "vendor"
-        },
-        {
-            "name": "composer.json",
-            "in": "."
+            "in": "vendor",
+            "exclude": ["doc", "docs", "test", "tests", "Tests", "examples"]
         }
     ],
-    "force-autodiscovery": true,
-    "main": "webfinger.php",
-    "output": "bin/webfinger.phar"
+    "files": ["composer.json", "composer.lock"],
+    "compression": "GZ",
+    "compactors": ["KevinGH\\Box\\Compactor\\Php"]
 }
