@@ -55,27 +55,27 @@
         },
         {
             "name": "mf2/mf2",
-            "version": "v0.5.0",
+            "version": "v0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/microformats/php-mf2.git",
-                "reference": "ddc56de6be62ed4a21f569de9b80e17af678ca50"
+                "reference": "5ebf105d9f6568576b375664171403705f22f92b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/microformats/php-mf2/zipball/ddc56de6be62ed4a21f569de9b80e17af678ca50",
-                "reference": "ddc56de6be62ed4a21f569de9b80e17af678ca50",
+                "url": "https://api.github.com/repos/microformats/php-mf2/zipball/5ebf105d9f6568576b375664171403705f22f92b",
+                "reference": "5ebf105d9f6568576b375664171403705f22f92b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
                 "mf2/tests": "dev-master#e9e2b905821ba0a5b59dab1a8eaf40634ce9cd49",
                 "phpcompatibility/php-compatibility": "^9.3",
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "^3.6.2"
+                "squizlabs/php_codesniffer": "^3.10.2",
+                "yoast/phpunit-polyfills": "^1.0"
             },
             "suggest": {
                 "barnabywalters/mf-cleaner": "To more easily handle the canonical data php-mf2 gives you",
@@ -111,9 +111,9 @@
             ],
             "support": {
                 "issues": "https://github.com/microformats/php-mf2/issues",
-                "source": "https://github.com/microformats/php-mf2/tree/v0.5.0"
+                "source": "https://github.com/microformats/php-mf2/tree/v0.5.1"
             },
-            "time": "2022-02-10T01:05:27+00:00"
+            "time": "2026-11-01T18:33:55+00:00"
         },
         {
             "name": "psr/container",
@@ -2629,5 +2629,5 @@
         "ext-mbstring": "*"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
