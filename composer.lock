@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "02fac8f1f8cf17c1afe5fc807d857ada",
+    "content-hash": "7bd7757052783b1d371d938a43c403f8",
     "packages": [
         {
             "name": "barnabywalters/mf-cleaner",
@@ -2623,7 +2623,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2",
+        "php": "^8.4",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*"

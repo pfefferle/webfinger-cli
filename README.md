@@ -26,7 +26,7 @@ $ composer global require pfefferle/webfinger-cli
 
 Or download `webfinger.phar` from the [latest release](https://github.com/pfefferle/webfinger-cli/releases/latest), make it executable and put it on your `PATH`.
 
-Requires PHP 8.2 or newer with the curl extension.
+Requires PHP 8.4 or newer with the curl extension.
 
 ## Development
 
